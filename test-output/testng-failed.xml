@@ -3,12 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BlogTesting.PostBlogsAPITest">
+      <class name="BlogTesting.FullAPITesting">
         <methods>
-          <include name="getData"/>
-          <include name="PostingBlogs"/>
+          <include name="registering"/>
         </methods>
-      </class> <!-- BlogTesting.PostBlogsAPITest -->
+      </class> <!-- BlogTesting.FullAPITesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

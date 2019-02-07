@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4926" started-at="2019-02-06T14:07:14Z" finished-at="2019-02-06T14:07:19Z">
+  <suite name="Default suite" duration-ms="15501" started-at="2019-02-07T11:46:22Z" finished-at="2019-02-07T11:46:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4926" started-at="2019-02-06T14:07:14Z" finished-at="2019-02-06T14:07:19Z">
-      <class name="BlogTesting.PostBlogsAPITest">
-        <test-method status="PASS" signature="getData()[pri:0, instance:BlogTesting.PostBlogsAPITest@5e8f9e2d]" name="getData" is-config="true" duration-ms="131" started-at="2019-02-06T14:07:14Z" finished-at="2019-02-06T14:07:14Z">
+    <test name="Default test" duration-ms="15501" started-at="2019-02-07T11:46:22Z" finished-at="2019-02-07T11:46:37Z">
+      <class name="BlogTesting.FullAPITesting">
+        <test-method status="PASS" signature="registering()[pri:1, instance:BlogTesting.FullAPITesting@5442a311]" name="registering" duration-ms="4952" started-at="2019-02-07T11:46:22Z" description="registering user" finished-at="2019-02-07T11:46:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getData -->
-        <test-method status="PASS" signature="PostingBlogInvalidUser()[pri:1, instance:BlogTesting.PostBlogsAPITest@5e8f9e2d]" name="PostingBlogInvalidUser" duration-ms="210" started-at="2019-02-06T14:07:14Z" description="invalid User" finished-at="2019-02-06T14:07:14Z">
+        </test-method> <!-- registering -->
+        <test-method status="PASS" signature="login()[pri:2, instance:BlogTesting.FullAPITesting@5442a311]" name="login" duration-ms="2189" started-at="2019-02-07T11:46:27Z" description="logging the registered user" finished-at="2019-02-07T11:46:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PostingBlogInvalidUser -->
-        <test-method status="PASS" signature="PostingBlogs()[pri:2, instance:BlogTesting.PostBlogsAPITest@5e8f9e2d]" name="PostingBlogs" duration-ms="2319" started-at="2019-02-06T14:07:14Z" description="posting blog with correct user_id and token" finished-at="2019-02-06T14:07:17Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="gettingAllBlogs()[pri:3, instance:BlogTesting.FullAPITesting@5442a311]" name="gettingAllBlogs" duration-ms="1357" started-at="2019-02-07T11:46:29Z" description="getting all blogs" finished-at="2019-02-07T11:46:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- PostingBlogs -->
-        <test-method status="PASS" signature="CheckingPostingBlogs()[pri:3, instance:BlogTesting.PostBlogsAPITest@5e8f9e2d]" name="CheckingPostingBlogs" duration-ms="2157" started-at="2019-02-06T14:07:17Z" description="checking whether the blogs are added or not" finished-at="2019-02-06T14:07:19Z">
+        </test-method> <!-- gettingAllBlogs -->
+        <test-method status="PASS" signature="postBlogs()[pri:5, instance:BlogTesting.FullAPITesting@5442a311]" name="postBlogs" duration-ms="3924" started-at="2019-02-07T11:46:30Z" description="posting blogs correctly" finished-at="2019-02-07T11:46:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheckingPostingBlogs -->
-      </class> <!-- BlogTesting.PostBlogsAPITest -->
+        </test-method> <!-- postBlogs -->
+        <test-method status="PASS" signature="gettingdefinedBlogs()[pri:6, instance:BlogTesting.FullAPITesting@5442a311]" name="gettingdefinedBlogs" duration-ms="2249" started-at="2019-02-07T11:46:34Z" description="getting a blog with post id" finished-at="2019-02-07T11:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gettingdefinedBlogs -->
+        <test-method status="PASS" signature="updateBlogs()[pri:7, instance:BlogTesting.FullAPITesting@5442a311]" name="updateBlogs" duration-ms="752" started-at="2019-02-07T11:46:37Z" description="updating blogs correctly" finished-at="2019-02-07T11:46:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateBlogs -->
+      </class> <!-- BlogTesting.FullAPITesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

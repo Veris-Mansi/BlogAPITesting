@@ -19,7 +19,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 public class LoginAPITest {
-
+	
 	Properties prop= new Properties();
 	@BeforeTest
 	public void getData() throws IOException
@@ -37,11 +37,11 @@ public class LoginAPITest {
 	
 	
 	@Test(priority=1,description="login tetsing with correct credentials")
-	public void LoginCorrectCredentials()
+	public static void LoginCorrectCredentials()
 	{
 		String array[]=Resource.getToken_USerid();
-		System.out.println("token "+array[0]);
-		System.out.println("id "+array[1]);
+		//System.out.println("token "+array[0]);
+		//System.out.println("id "+array[1]);
 	}
 	@Test(priority=2,description="login tetsing with empty username")
 	public void LoginEmptyUSername()
@@ -50,7 +50,7 @@ public class LoginAPITest {
 		when().post(Resource.loginResource()).
 		then().assertThat().statusCode(400).and().contentType(ContentType.JSON).and().body("message", equalTo("Bad Request"));
 	}
-	@Test(priority=3,description="login tetsing with empty password")
+	@Test(priority=4,description="login tetsing with empty password")
 	public void LoginEmptyPAssword()
 	{
 		given().headers("Content-Type","application/json").body(PayloadData.Login_Emptypswd()).
@@ -58,7 +58,7 @@ public class LoginAPITest {
 		then().assertThat().statusCode(400).and().contentType(ContentType.JSON).and().body("message", equalTo("Bad Request"));
 		
 	}
-	@Test(priority=4,description="login tetsing with invalid username")
+	@Test(priority=5,description="login tetsing with invalid username")
 	public void Logininvalidusername()
 	{
 	    given().headers("Content-Type","application/json").body(PayloadData.Login_invalidUsername()).
@@ -66,7 +66,7 @@ public class LoginAPITest {
 		then().assertThat().statusCode(404).and().contentType(ContentType.JSON).and().body("message", equalTo("No account with this username"));
 		
 	}
-	@Test(priority=5,description="login tetsing with unuthorized access")
+	@Test(priority=4,description="login tetsing with unuthorized access")
 	public void Login_unuthorized()
 	{
 	    given().headers("Content-Type","application/json").body(PayloadData.Login_unauthorizeduser()).

@@ -5,8 +5,8 @@ public class PayloadData {
 	public static String getPayloadData()
 	{
 			String b="{\r\n" + 
-					"	\"username\":\"raamm\",\r\n" + 
-					"	\"email\":\"ramam@gmail.com\",\r\n" + 
+					"	\"username\":\"gitaaa\",\r\n" + 
+					"	\"email\":\"giaraata@gmail.com\",\r\n" + 
 					"	\"password\":\"San@123\"\r\n" + 
 					"}";
 			return b ;
@@ -34,7 +34,7 @@ public class PayloadData {
 	
 	public static String Login_Correct()
 	{
-		String login = "{\"username\":\"raamm\",\r\n" + 
+		String login = "{\"username\":\"sita\",\r\n" + 
 				"	\"password\":\"San@123\"\r\n" + 
 				"}";
 		return login;
@@ -73,4 +73,10 @@ public class PayloadData {
 		// TODO Auto-generated method stub
 		String p="{\"content\":\"Hi this is my second blog\"}";
 		return p;
-}}
+}
+public static String UpdateBlogs() {
+	// TODO Auto-generated method stub
+	String p="{\"content\":\"Hi this is my updating blog\"}";
+	return p;
+}
+}
