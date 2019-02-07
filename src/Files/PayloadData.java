@@ -5,8 +5,8 @@ public class PayloadData {
 	public static String getPayloadData()
 	{
 			String b="{\r\n" + 
-					"	\"username\":\"gitaaa\",\r\n" + 
-					"	\"email\":\"giaraata@gmail.com\",\r\n" + 
+					"	\"username\":\"witaaa\",\r\n" + 
+					"	\"email\":\"wiaraata@gmail.com\",\r\n" + 
 					"	\"password\":\"San@123\"\r\n" + 
 					"}";
 			return b ;

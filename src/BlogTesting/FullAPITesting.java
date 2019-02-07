@@ -18,35 +18,35 @@ public class FullAPITesting {
 
 	String token_id[];
 	String blog_id[];
-	@Test(priority=1,description="registering user")
+	@Test(description="registering user")
 	public void registering()
 	{
 		RegisterAPITest.RegisterValidCredentials();
 	}
-	@Test(priority=2,description="logging the registered user")
+	@Test(dependsOnMethods="registering",description="logging the registered user")
 	public void login()
 	{
 		token_id=Resource.getToken_USerid();
 		System.out.println(token_id[0]+" "+token_id[1]);
 	}
-	@Test(priority=3,description="getting all blogs")
+	@Test(dependsOnMethods="login",description="getting all blogs")
 		public void gettingAllBlogs()
 		{
 			Resource.getPosts(token_id);
 		}
 	
-	@Test(priority=5,description="posting blogs correctly")
+	@Test(dependsOnMethods="gettingAllBlogs",description="posting blogs correctly")
 	public void postBlogs()
 	{
 		blog_id=Resource.getBlogID(token_id);
 		System.out.println(blog_id[0]+" "+blog_id[1]);
 	}
-	@Test(priority=6,description="getting a blog with post id")
+	@Test(dependsOnMethods="postBlogs",description="getting a blog with post id")
 	public void gettingdefinedBlogs()
 	{
 		Resource.getParticularblogAthor(token_id, blog_id[0]);
 	}
-	@Test(priority=7,description="updating blogs correctly")
+	@Test(dependsOnMethods="gettingdefinedBlogs",description="updating blogs correctly")
 	public void updateBlogs()
 	{
 			given().headers("Content-Type","application/json").headers("token",token_id[0]).body(PayloadData.UpdateBlogs()).
@@ -54,6 +54,7 @@ public class FullAPITesting {
 			then().assertThat().statusCode(200).and().body("message", equalTo("Post updated succesfully"));
 
 	}
+	@Test(dependsOnMethods="updateBlogs",description="updating blogs correctly")
 	public void deleteBlogs()
 	{
 		given().headers("Content-Type","application/json").headers("token",token_id[0]).

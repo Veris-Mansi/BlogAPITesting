@@ -5,7 +5,13 @@
     <classes>
       <class name="BlogTesting.FullAPITesting">
         <methods>
+          <include name="gettingdefinedBlogs"/>
+          <include name="login"/>
+          <include name="updateBlogs"/>
+          <include name="gettingAllBlogs"/>
           <include name="registering"/>
+          <include name="postBlogs"/>
+          <include name="deleteBlogs"/>
         </methods>
       </class> <!-- BlogTesting.FullAPITesting -->
     </classes>

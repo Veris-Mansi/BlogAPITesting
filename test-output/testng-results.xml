@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15501" started-at="2019-02-07T11:46:22Z" finished-at="2019-02-07T11:46:37Z">
+  <suite name="Default suite" duration-ms="14015" started-at="2019-02-07T12:39:49Z" finished-at="2019-02-07T12:40:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15501" started-at="2019-02-07T11:46:22Z" finished-at="2019-02-07T11:46:37Z">
-      <class name="BlogTesting.FullAPITesting">
-        <test-method status="PASS" signature="registering()[pri:1, instance:BlogTesting.FullAPITesting@5442a311]" name="registering" duration-ms="4952" started-at="2019-02-07T11:46:22Z" description="registering user" finished-at="2019-02-07T11:46:27Z">
+    <test name="Default test" duration-ms="14015" started-at="2019-02-07T12:39:49Z" finished-at="2019-02-07T12:40:03Z">
+      <class name="Inventorytesting.GetRequestTest">
+        <test-method status="PASS" signature="Getting()[pri:0, instance:Inventorytesting.GetRequestTest@5442a311]" name="Getting" duration-ms="13952" started-at="2019-02-07T12:39:49Z" finished-at="2019-02-07T12:40:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registering -->
-        <test-method status="PASS" signature="login()[pri:2, instance:BlogTesting.FullAPITesting@5442a311]" name="login" duration-ms="2189" started-at="2019-02-07T11:46:27Z" description="logging the registered user" finished-at="2019-02-07T11:46:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="gettingAllBlogs()[pri:3, instance:BlogTesting.FullAPITesting@5442a311]" name="gettingAllBlogs" duration-ms="1357" started-at="2019-02-07T11:46:29Z" description="getting all blogs" finished-at="2019-02-07T11:46:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gettingAllBlogs -->
-        <test-method status="PASS" signature="postBlogs()[pri:5, instance:BlogTesting.FullAPITesting@5442a311]" name="postBlogs" duration-ms="3924" started-at="2019-02-07T11:46:30Z" description="posting blogs correctly" finished-at="2019-02-07T11:46:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- postBlogs -->
-        <test-method status="PASS" signature="gettingdefinedBlogs()[pri:6, instance:BlogTesting.FullAPITesting@5442a311]" name="gettingdefinedBlogs" duration-ms="2249" started-at="2019-02-07T11:46:34Z" description="getting a blog with post id" finished-at="2019-02-07T11:46:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gettingdefinedBlogs -->
-        <test-method status="PASS" signature="updateBlogs()[pri:7, instance:BlogTesting.FullAPITesting@5442a311]" name="updateBlogs" duration-ms="752" started-at="2019-02-07T11:46:37Z" description="updating blogs correctly" finished-at="2019-02-07T11:46:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateBlogs -->
-      </class> <!-- BlogTesting.FullAPITesting -->
+        </test-method> <!-- Getting -->
+      </class> <!-- Inventorytesting.GetRequestTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
